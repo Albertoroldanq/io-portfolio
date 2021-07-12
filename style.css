@@ -7,12 +7,12 @@ html{
 	font-size: 16px;
 }
 
-body{
-}
-
 header{
 	padding: 10px 50px;
 	position: sticky;
+	top: 0;
+	z-index: 99;
+	background: white;
 }
 
 section, footer{
@@ -31,7 +31,7 @@ h2{
 	font-size: 2rem;
 }
 
-nav{
+nav, .menu-items-wrapper, .projects-wrapper{
 	display: flex;
 	justify-content: space-between;
 }
@@ -39,20 +39,12 @@ nav{
 
 .menu-items-wrapper{
 	width: 40%;
-	display: flex;
-	justify-content: space-between;
 }
 
 .intro, .portfolio {
 	background: black;
 	color: white;
 }
-
-.projects-wrapper{
-	display: flex;
-	justify-content: space-between;
-}
-
 
 .project-display{
 	max-width: 30%;
