@@ -12,10 +12,14 @@ header{
 	position: sticky;
 	top: 0;
 	z-index: 99;
-	background: white;
+	background: black;
 }
 
-section, footer{
+nav {
+	align-items: center;
+}
+
+.intro-content, .about-me, .portfolio, footer{
 	padding: 20px 50px;
 }
 
@@ -46,18 +50,53 @@ h3.project-title{
 	bottom: 0;
 }
 
-nav, .menu-items-wrapper, .intro, .projects-wrapper{
+nav, .intro-content, .projects-wrapper{
 	display: flex;
 	justify-content: space-between;
+
 }
 
 .menu-items-wrapper{
-	width: 40%;
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
 }
 
-.menu-item{
-	color: black;
+.menu-item, .logo{
+	color: white;
+	padding: 5px 10px 5px 10px;
 }
+
+
+
+.menu-item:hover{
+	border-bottom: 1px solid white;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.intro-content{
+	color: white;
+	background: rgba(150,150,150,0.3);
+}
+
+.intro {
+	background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+
+	}
+
+
+/*
+.video-intro {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+}
+*/
 
 .intro p, .cta-button{
 	margin-bottom: 40px;
@@ -78,7 +117,19 @@ nav, .menu-items-wrapper, .intro, .projects-wrapper{
 
 }
 
-.intro, .portfolio {
+/*
+
+.skills-wrapper{
+	width: 50%;
+}
+
+.skills-logo{
+	width: 40%;
+	fill: #ffffff;
+}
+
+*/
+ .portfolio {
 	background: black;
 	color: white;
 }
