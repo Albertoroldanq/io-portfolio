@@ -25,25 +25,49 @@ a{
 
 h1{
 	font-size: 2.5rem;
+	margin: 20px 0;
+}
+
+p{
+	margin: 0;
 }
 
 h2{
 	font-size: 2rem;
 }
 
-nav, .menu-items-wrapper, .projects-wrapper{
+h3.project-title{
+	color: white;
+	position: absolute;
+}
+
+nav, .menu-items-wrapper, .intro, .projects-wrapper{
 	display: flex;
 	justify-content: space-between;
 }
-
 
 .menu-items-wrapper{
 	width: 40%;
 }
 
+.intro p, .desc-portfolio-wrapper{
+	margin-bottom: 20px;
+}
+
+.cta-button{
+	padding: 8px 15px;
+	background: white;
+	border-radius: 40px;
+	margin-top: 200px;
+}
+
 .intro, .portfolio {
 	background: black;
 	color: white;
+}
+
+.project-link{
+	position: relative;
 }
 
 .project-display{
