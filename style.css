@@ -4,12 +4,60 @@
 
 html{
 	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body{
+}
+
+header{
+	padding: 10px 50px;
+	position: sticky;
+}
+
+section, footer{
+	padding: 20px 50px;
+}
+
+a{
+	text-decoration: none;
 }
 
 h1{
-
+	font-size: 2.5rem;
 }
 
 h2{
+	font-size: 2rem;
+}
 
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.menu-items-wrapper{
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.intro, .portfolio {
+	background: black;
+	color: white;
+}
+
+.projects-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.project-display{
+	max-width: 30%;
+}
+
+.project-screenshot{
+	max-width: 100%;
 }
