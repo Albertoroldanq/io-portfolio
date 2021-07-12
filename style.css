@@ -1,12 +1,13 @@
 /*#4452fb*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*  */
 * {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
 }
 
 html{
-	box-sizing: border-box;
 	font-size: 16px;
 }
 
@@ -15,7 +16,11 @@ header{
 	position: sticky;
 	top: 0;
 	z-index: 99;
-	background: black;
+	background: #ffffff;
+}
+
+section{
+	border-bottom: 1px solid white;
 }
 
 p {
@@ -31,8 +36,9 @@ nav {
 	align-items: center;
 }
 
-.about-me, .portfolio, footer{
-	padding: 50px 50px;
+.about-me, .portfolio, .contact{
+	padding: 50px 10px;
+	min-height: 50vh;
 }
 
 nav, .intro-content, .projects-wrapper{
@@ -49,9 +55,9 @@ nav, .intro-content, .projects-wrapper{
 }
 
 .menu-item, .logo{
-	color: white;
+	color: #09003d;
 	padding: 5px 10px 5px 10px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #ffffff;
 }
 
 h1, h2, h3, .menu-item, .logo, .cta-button a {
@@ -62,89 +68,104 @@ h1, h2, h3, .menu-item, .logo, .cta-button a {
 
 }
 
-
 .menu-item:hover{
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #09003d;
 }
 
 .logo {
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: 500;
+}
+
+.logo:hover{
+	color: #ff0062;
 }
 
 /*FIRST SECTION*/
 .intro {
 	background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-	background-size: 120%;
-	background-repeat: no-repeat;
+	background-repeat: cover;
+	min-height: 90vh;
 	}
 
 .intro-content{
+	text-align: center;
 	color: white;
-	background: rgba(0,0,0,0.8);
+	background: rgba(9, 0, 61,0.8);
 	padding: 150px 50px;
-}
-
-.intro-wrapper {
-	width: 50%;
+	min-height: 90vh;
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	margin: 20px 0;
+	font-weight: 600;
 }
 
 .subtitle {
-	font-size: 2.4rem;
+	font-size: 2.6rem;
 	font-weight: 700;
 	color: #ff0062;
 }
 
 .desc-intro{
-	line-height: 2rem;
-	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-size: 1.7rem;
+	font-weight: 400;
+	margin-bottom: 100px;
 }
 
 .subtitle{
 	margin-bottom: 40px;
 }
 
-.desc-intro {
-	margin-bottom: 60px;
-}
-
 .cta-button a{
 	font-size: 1.2rem;
-	font-weight: 700;
+	font-weight: 600;
 	padding: 15px 25px;
-	background: white;
+	background: #61FED2;
 	border-radius: 40px;
-	color: black;
+	color: #09003d;
 }
 
-.cta-button:hover{
 
+
+h2 {
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 3rem;
 }
 
-/**/
+.desc-about-me-wrapper{
+	width: 60%;
+}
 
-h2{
-	font-size: 2rem;
+.desc-about-me-wrapper p, .desc-portfolio-wrapper p, .contact p {
+  	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-weight: 300;
 }
 
 .project-details {
 	position: absolute;
 	bottom: 0;
-	padding: 0 10px 10px 10px;
-	width: 100%;
 	display:flex;
-	
+	justify-content: space-between;
+	padding: 10px;	
+	width: 100%;
+}
+
+.project-details i {
+	font-size: 2rem;
+	color: white;
 }
 
 h3.project-title{
 	font-size: 2rem;
+	font-weight: 500;
 	color: white;	
 	margin: 0;
+	display: inline;
 }
 
 /*
@@ -160,8 +181,6 @@ h3.project-title{
 	margin-bottom: 20px;
 }
 
-
-
 /*
 
 .skills-wrapper{
@@ -174,25 +193,43 @@ h3.project-title{
 }
 
 */
- .portfolio {
-	background: black;
-	color: white;
+ 
+ .about-me, .portfolio {
+	background: #F1F4FF;
+	color: black;
 }
 
 .projects-wrapper {
-	padding-bottom: 20px;
-}
-
-.project-link{
-	position: relative;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+	margin-top: 150px;
 }
 
 .project-display{
-	max-width: 33%;
+	position: relative;
+	width: 50%;
+	height: 200px;
+	border: 5px solid #F1F4FF;
 }
 
 .project-screenshot{
+	object-fit: cover;
+    object-position: 50% 30%;
+	position: absolute;
 	max-width: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background: #09003d;
+	color: #ffffff;
 }
 
 .contact-icons-wrapper{
@@ -200,7 +237,7 @@ h3.project-title{
 }
 
 .icon {
-	color: #ff0062;
+	color: inherit;
 	margin: 0 5px 0 5px;
 	font-size: 3rem;
 }
