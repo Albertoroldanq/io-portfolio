@@ -21,6 +21,7 @@ section, footer{
 
 a{
 	text-decoration: none;
+	cursor: pointer;
 }
 
 h1{
@@ -37,8 +38,12 @@ h2{
 }
 
 h3.project-title{
+	width: 100%;
+	margin: 0;
+	padding: 0 10px 10px 10px;
 	color: white;
 	position: absolute;
+	bottom: 0;
 }
 
 nav, .menu-items-wrapper, .intro, .projects-wrapper{
@@ -50,15 +55,27 @@ nav, .menu-items-wrapper, .intro, .projects-wrapper{
 	width: 40%;
 }
 
-.intro p, .desc-portfolio-wrapper{
+.menu-item{
+	color: black;
+}
+
+.intro p, .cta-button{
+	margin-bottom: 40px;
+}
+
+.desc-portfolio-wrapper{
 	margin-bottom: 20px;
 }
 
-.cta-button{
+.cta-button a{
 	padding: 8px 15px;
 	background: white;
 	border-radius: 40px;
-	margin-top: 200px;
+	color: black;
+}
+
+.cta-button:hover{
+
 }
 
 .intro, .portfolio {
