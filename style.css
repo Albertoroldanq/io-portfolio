@@ -260,7 +260,7 @@ h3.project-title {
 @media screen and (max-width: 800px) {
 	header {
 	padding: 0;
-}
+	}
 
 	nav {
 			padding: 10px;
@@ -328,12 +328,12 @@ h3.project-title {
 .desc-about-me-wrapper p, .desc-portfolio-wrapper p, .contact p {
 	  font-size: 1.2rem;
 		line-height: 2rem;
-}
+	}
 
 	.projects-wrapper {
 		flex-direction: column;
 		margin-top: 30px;
-}
+	}
 
 	.desc-about-me-wrapper p, .desc-portfolio-wrapper p, .desc-about-me-wrapper h2, .desc-portfolio-wrapper h2, .contact-wrapper, .project-display {
 		width: 100%;
