@@ -20,7 +20,7 @@ header{
 }
 
 section{
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid white;
 }
 
 p {
@@ -37,7 +37,7 @@ nav {
 }
 
 .about-me, .portfolio, .contact{
-	padding: 50px 10px;
+	padding: 50px 0px;
 	min-height: 50vh;
 }
 
@@ -65,7 +65,7 @@ h1, h2, h3, .menu-item, .logo, .cta-button a {
 }
 
 .menu-item {
-
+	font-weight: 500;
 }
 
 .menu-item:hover{
@@ -73,8 +73,8 @@ h1, h2, h3, .menu-item, .logo, .cta-button a {
 }
 
 .logo {
-	font-size: 1.5rem;
-	font-weight: 500;
+	font-size: 1.3rem;
+	font-weight: 700;
 }
 
 .logo:hover{
@@ -89,23 +89,32 @@ h1, h2, h3, .menu-item, .logo, .cta-button a {
 	}
 
 .intro-content{
-	text-align: center;
 	color: white;
 	background: rgba(9, 0, 61,0.8);
 	padding: 150px 50px;
 	min-height: 90vh;
 }
 
+.intro-wrapper {
+	width: 60%;
+}
+
 h1 {
 	font-size: 3.5rem;
 	margin: 20px 0;
-	font-weight: 600;
+	font-weight: 700;
+}
+
+h1 span{
+	color: #ff0062;
+	white-space: nowrap;
 }
 
 .subtitle {
-	font-size: 2.6rem;
 	font-weight: 700;
-	color: #ff0062;
+	font-size: 3rem;
+	color:#FED017;
+	margin:40px 0 40px 0
 }
 
 .desc-intro{
@@ -113,10 +122,6 @@ h1 {
 	font-size: 1.7rem;
 	font-weight: 400;
 	margin-bottom: 100px;
-}
-
-.subtitle{
-	margin-bottom: 40px;
 }
 
 .cta-button a{
@@ -128,7 +133,10 @@ h1 {
 	color: #09003d;
 }
 
-
+.skills-wrapper{
+	background:  #F1F4FF;
+	height: 400px;
+}
 
 h2 {
 	font-size: 3rem;
@@ -136,14 +144,17 @@ h2 {
 	line-height: 3rem;
 }
 
-.desc-about-me-wrapper{
-	width: 60%;
-}
-
 .desc-about-me-wrapper p, .desc-portfolio-wrapper p, .contact p {
-  	font-size: 1.6rem;
+  	font-size: 1.4rem;
 	line-height: 2.4rem;
 	font-weight: 300;
+}
+
+
+.desc-about-me-wrapper p, .desc-portfolio-wrapper p, .desc-about-me-wrapper h2, .desc-portfolio-wrapper h2{
+	padding-left: 100px;
+	width: 70%;
+	margin-right: 0;
 }
 
 .project-details {
@@ -194,9 +205,16 @@ h3.project-title{
 
 */
  
- .about-me, .portfolio {
-	background: #F1F4FF;
+  .portfolio {
 	color: black;
+	background: #F1F4FF;
+}
+
+
+.about-me {
+	padding-right: 20px;
+	display: flex;
+	background:#FED017
 }
 
 .projects-wrapper {
@@ -240,4 +258,9 @@ h3.project-title{
 	color: inherit;
 	margin: 0 5px 0 5px;
 	font-size: 3rem;
+}
+
+.my-photo {
+	width: auto;
+	height: 600px;
 }
