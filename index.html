@@ -112,7 +112,7 @@
 	<footer class="contact" id="contact">
 		<div class= contact-wrapper>
 			<h2>CONTACT ME</h2>
-		<p>The best way to get in touch with me is via email, but if you prefer social media I have included those too.</p>
+		<p>The best way to get in touch with me is via email, but if you prefer social media or the contact form I have included those too.</p>
 		<div class="contact-icons-wrapper">
 
 			<!--i tags to insert icons of each social media link-->
@@ -126,6 +126,16 @@
 			POSSIBLE CONTACT FORM FROM GITHUB PAGES
 			https://dev.to/charalambosioannou/create-a-static-webpage-with-a-contact-form-on-github-pages-3532
 		-->
+
+			<div class="contact-form">
+				<iframe name="hiddenFrame" class="hide"></iframe>
+                <form action="https://formspree.io/f/xayadevj" method="POST" target="hiddenFrame">
+	                <input" type="hidden" name="_subject" value="Contact request from personal website" />
+	                <input class="input-email" type="email" name="_replyto" placeholder="Your email" required>
+	                <textarea class="input-text" name="message" placeholder="Type your message" required rows="5" cols="33"></textarea>
+	                <input class="btn-form" type="submit" value="Send message!">
+	            </form>
+			</div>
 	</footer>
 </body>
 </html>

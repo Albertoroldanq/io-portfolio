@@ -257,6 +257,45 @@ h3.project-title {
 	font-size: 3rem;
 }
 
+.hide { 
+	display:none; 
+}
+
+
+.contact-form {
+	margin-top: 30px;
+	min-width: 600px;
+}
+
+form input, form textarea {
+	display: block;
+	padding: 10px;
+}
+
+.input-text {
+	margin: 10px 0 30px 0;
+	width: 100%;
+}
+
+.input-email {;
+	width: 50%;
+}
+
+.btn-form {
+	background: none;
+	cursor: pointer;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	font-weight: 500;
+}
+
+.btn-form:hover {
+	background: #ffffff;
+	color: #09003d;
+}
+
+/*BREAKPOINT 800px*/
+
 @media screen and (max-width: 800px) {
 	header {
 		padding: 0;
@@ -356,5 +395,14 @@ h3.project-title {
 	.project-display {
 		border-width: 3px 0 0 0;
 	}
+
+	.contact-form {
+		min-width: 90%;
+	}
+
+	.input-email {;
+		width: 100%;
+	}
+
 }
 
