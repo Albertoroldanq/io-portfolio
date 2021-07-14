@@ -73,32 +73,42 @@
 		</section>
 		
 		<section class="portfolio" id="portfolio">
+
+			<!--I used .desc-portofolio-wrapper div to group the title and the small description so it will be easier to re-arrange the section if I want to add more content at the right-->
+			
 			<div class="desc-portfolio-wrapper">
 				<h2>PORTFOLIO</h2>
 				<p>Here is a small selection of the projects I have worked on during my training.</p>
 			</div>
+
+			<!--.projects-wrapper class will be set as flexbox -->
+			
 			<div class="projects-wrapper">
 				<!--Wrap it in a tag to link the whole group to the url project-->
+
+				<!--With the .project-display class I can group Image wrapped in an <a> tag and the project details -->
 				
 				<div class="project-display">
 					<a class="project-link" href="https://google.com" target="_blank">
 						<img class="project-screenshot" alt="project" src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
 					</a>
+					<!--With the .project-details class I can group the project title and the github icon and arrange them at the bottom but inside the image-->
 					<div class="project-details">
 						<a href="https://github.com" target="_blank"><h3 class="project-title">PROJECT 1</h3></a>
 						<a href="https://github.com" target="_blank"><i class="fab fa-github-square"></i></a>
 					</div>
 				</div>
+
 				<div class="project-display">
 					<a class="project-link" href="https://google.com" target="_blank">
 						<img class="project-screenshot" alt="project" src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
 					</a>
-
 					<div class="project-details">
 						<a href="https://github.com" target="_blank"><h3 class="project-title">PROJECT 2</h3></a>
 						<a href="https://github.com" target="_blank"><i class="fab fa-github-square"></i></a>
 					</div>
 				</div>
+
 				<div class="project-display">
 					<a class="project-link" href="https://google.com" target="_blank">
 						<img class="project-screenshot" alt="project" src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
@@ -124,7 +134,7 @@
 	</main>
 
 	<footer class="contact" id="contact">
-		<div class= contact-wrapper>
+		<div class="contact-wrapper">
 			<h2>CONTACT ME</h2>
 			<p>The best way to get in touch with me is via email, but if you prefer social media or the contact form I have included those too.</p>
 		
@@ -148,9 +158,14 @@
 		<!--
 			POSSIBLE CONTACT FORM FOR GITHUB PAGES
 			https://dev.to/charalambosioannou/create-a-static-webpage-with-a-contact-form-on-github-pages-3532
+
+			- I would like to add a message once submitted but it probably need JS
+			- Also, I would like to reset the form after submitting, but I think I might need JS
 		-->
 
 			<div class="contact-form">
+
+				<!--Hidden iframe to avoid redirecting the website after submiting-->
 				<iframe name="hiddenFrame" class="hide"></iframe>
                 <form action="https://formspree.io/f/xayadevj" method="POST" target="hiddenFrame">
 	                <input" type="hidden" name="_subject" value="Contact request from personal website" />
