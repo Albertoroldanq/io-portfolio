@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<!--FONT AWESOME LIBRARY FOR ICONS-->
 	<script src="https://kit.fontawesome.com/5b176a6be4.js" crossorigin="anonymous"></script>
+	
+	<!--NORMALIZE STYLESHEET FOR BROWSER COMPATIBILITY-->
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	<!--CUSTOM STYLESHEET-->
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--ANIMATE CSS TO ADD ANIMATIONS WITH CLASSES - https://animate.style/ -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<meta charset="utf-8">
 	<title>Alberto's Portfolio</title>
 </head>
+
 <body>
 	<header>
 		<nav>
@@ -18,13 +28,19 @@
 			</div>
 		</nav>
 	</header>
+	
 	<main>
+		<!--This is the first section (introduction), with the coding screen background and a background transparency-->
 		<section class="intro">
-			<!--Desc as description (desc-intro)-->
+			<!--
+			--- Desc as description (desc-intro) ---
+				div childs that will help me to arrange the content if I add more elements such as images
+			-->
 			<div class="intro-content">
 				<div class="intro-wrapper">
 					<h1>Hey, I'm a <span>Full-Stack</span> Web Developer</h1>
-					<p class="subtitle">Responsive Web Design</p>
+					<!--animate__ classes to style the element with animation -->
+					<p class="animate__animated animate__backInDown animate__slow subtitle">Responsive Web Design</p>
 					<p class="desc-intro">I develop each project with the most suitable tools to achieve the best results. I value simple content structures and user friendly websites</p>
 
 					<!--cta as "call to action"-->
@@ -34,6 +50,8 @@
 				</div>
 			</div>
 		</section>
+
+		<!--Section with the coding languages icons-->
 
 		<section class ="coding-lang">
 			<div class="coding-lang-wrapper">
@@ -48,11 +66,12 @@
 		<section class="about-me" id="about-me">
 			<div class="desc-about-me-wrapper">
 				<h2>ABOUT ME</h2>
-				<p>Hi, I’m Alberto. I started my journey to code more than 4 years ago. After taking numerous online courses about HTML, CSS and JavaScript, I decided to make of my passion a profession. So I joined <a href="https://io-academy.uk/" target="_blank">IO Academy</a> coding bootcamp to become a Full-Stack Software Developer.</p>
+				<p>Hi, I’m Alberto. I started my journey of coding more than 4 years ago. After taking numerous online courses about HTML, CSS and JavaScript, I decided to make of my passion a profession. So I joined <a href="https://io-academy.uk/" target="_blank">IO Academy</a> coding bootcamp to become a Full-Stack Software Developer.</p>
 
 				<p>I have always been curious about technology and specially everything that can be done digitally.</p>
 			</div>
 		</section>
+		
 		<section class="portfolio" id="portfolio">
 			<div class="desc-portfolio-wrapper">
 				<h2>PORTFOLIO</h2>
@@ -70,17 +89,16 @@
 						<a href="https://github.com" target="_blank"><i class="fab fa-github-square"></i></a>
 					</div>
 				</div>
-			
 				<div class="project-display">
 					<a class="project-link" href="https://google.com" target="_blank">
 						<img class="project-screenshot" alt="project" src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
 					</a>
+
 					<div class="project-details">
 						<a href="https://github.com" target="_blank"><h3 class="project-title">PROJECT 2</h3></a>
 						<a href="https://github.com" target="_blank"><i class="fab fa-github-square"></i></a>
 					</div>
 				</div>
-				
 				<div class="project-display">
 					<a class="project-link" href="https://google.com" target="_blank">
 						<img class="project-screenshot" alt="project" src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
@@ -103,25 +121,44 @@
 			</div>
 			
 		</section>
-		
 	</main>
+
 	<footer class="contact" id="contact">
 		<div class= contact-wrapper>
 			<h2>CONTACT ME</h2>
-		<p>The best way to get in touch with me is via email, but if you prefer social media I have included those too.</p>
-		<div class="contact-icons-wrapper">
+			<p>The best way to get in touch with me is via email, but if you prefer social media or the contact form I have included those too.</p>
+		
+			<div class="contact-icons-wrapper">
 
-			<!--i tags to insert icons of each social media link-->
-			<a class="icon" href="https:linkedin.com/in/albertoroldanq" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a class="icon" href="mailto:albertoroldanq@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-			<a class="icon" href="https://github.com/Albertoroldanq" target="_blank"><i class="fab fa-github-square"></i></a>
+				<!--i tags to insert icons of each social media link-->
+				<a class="icon" href="https:linkedin.com/in/albertoroldanq" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a class="icon" href="mailto:albertoroldanq@gmail.com" target="_blank">
+					<i class="fas fa-envelope"></i>
+				</a>
+				<a class="icon" href="https://github.com/Albertoroldanq" target="_blank">
+					<i class="fab fa-github-square"></i>
+				</a>
+
+			</div>
 		</div>
-		</div>
+
 
 		<!--
-			POSSIBLE CONTACT FORM FROM GITHUB PAGES
+			POSSIBLE CONTACT FORM FOR GITHUB PAGES
 			https://dev.to/charalambosioannou/create-a-static-webpage-with-a-contact-form-on-github-pages-3532
 		-->
+
+			<div class="contact-form">
+				<iframe name="hiddenFrame" class="hide"></iframe>
+                <form action="https://formspree.io/f/xayadevj" method="POST" target="hiddenFrame">
+	                <input" type="hidden" name="_subject" value="Contact request from personal website" />
+	                <input class="input-email" type="email" name="_replyto" placeholder="Your email" required>
+	                <textarea class="input-text" name="message" placeholder="Type your message" required rows="5" cols="33"></textarea>
+	                <input class="btn-form" type="submit" value="Send message!">
+	            </form>
+			</div>
 	</footer>
 </body>
 </html>

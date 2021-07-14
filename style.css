@@ -235,7 +235,7 @@ h3.project-title {
 	position: absolute;
 	max-width: 100%;
 	width: 100%;
-	height: 100%;
+	height:100%;
 }
 
 .contact {
@@ -257,13 +257,60 @@ h3.project-title {
 	font-size: 3rem;
 }
 
+
+/*CONTACT FORM  IN FOOTER
+- Added an hidden iframe to avoid opening a new window after submiting
+
+*/
+.hide { 
+	display:none; 
+}
+
+
+.contact-form {
+	margin-top: 30px;
+	min-width: 600px;
+}
+
+form input, form textarea {
+	display: block;
+	padding: 10px;
+}
+
+.input-text {
+	margin: 10px 0 30px 0;
+	width: 100%;
+}
+
+.input-email {;
+	width: 50%;
+}
+
+.btn-form {
+	background: none;
+	cursor: pointer;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	font-weight: 500;
+}
+
+.btn-form:hover {
+	background: #ffffff;
+	color: #09003d;
+}
+
+
+
+
+/*BREAKPOINT 800px*/
+
 @media screen and (max-width: 800px) {
 	header {
-	padding: 0;
+		padding: 0;
 	}
 
 	nav {
-			padding: 10px;
+		padding: 10px;
 	}
 
 	.logo, .menu-items {
@@ -278,8 +325,8 @@ h3.project-title {
 
 	}
 
-		.intro-content {
-		padding: 50px 10px;
+	.intro-content {
+		padding: 50px 20px;
 	}
 
 	.intro-wrapper {
@@ -292,12 +339,12 @@ h3.project-title {
 	}
 
 	h2 {
-	font-size: 2.2rem;
-	line-height: 2.2rem;
+		font-size: 2.2rem;
+		line-height: 2.2rem;
 	}
 
 	h3.project-title {
-	font-size: 1.8rem;
+		font-size: 1.8rem;
 	}
 
 	h1 span {
@@ -330,13 +377,18 @@ h3.project-title {
 		font-size: 5rem;
 	}
 
+	.about-me {
+		background-size: 100%;
+	}
+
 	.about-me, .desc-portfolio-wrapper, .contact{
 		padding: 20px 20px 20px 20px;
 	}
 
 	.desc-about-me-wrapper p, .desc-portfolio-wrapper p, .contact p {
-	  font-size: 1.2rem;
+	  	font-size: 1.2rem;
 		line-height: 2rem;
+		font-weight: 400;
 	}
 
 	.projects-wrapper {
@@ -351,5 +403,14 @@ h3.project-title {
 	.project-display {
 		border-width: 3px 0 0 0;
 	}
+
+	.contact-form {
+		min-width: 90%;
+	}
+
+	.input-email {;
+		width: 100%;
+	}
+
 }
 
