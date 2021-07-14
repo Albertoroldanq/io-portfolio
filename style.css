@@ -130,8 +130,8 @@ h1 span {
 .subtitle {
 	font-weight: 700;
 	font-size: 3rem;
-	color:#FED017;
-	margin:60px 0 40px 0
+	color: #FED017;
+	margin: 60px 0 40px 0
 }
 
 .desc-intro{
@@ -172,9 +172,9 @@ h2 {
 }
 
 .desc-about-me-wrapper p, .desc-portfolio-wrapper p, .contact p {
-	  font-size: 1.4rem;
-		line-height: 2.4rem;
-		font-weight: 300;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	font-weight: 300;
 }
 
 .desc-about-me-wrapper p, .desc-portfolio-wrapper p, .desc-about-me-wrapper h2, .desc-portfolio-wrapper h2, .contact-wrapper {
@@ -231,7 +231,7 @@ h3.project-title {
 
 .project-screenshot {
 	object-fit: cover;
-  object-position: 50% 20%;
+  	object-position: 50% 20%;
 	position: absolute;
 	max-width: 100%;
 	width: 100%;
@@ -282,7 +282,7 @@ form input, form textarea {
 	width: 100%;
 }
 
-.input-email {;
+.input-email {
 	width: 50%;
 }
 
@@ -408,7 +408,7 @@ form input, form textarea {
 		min-width: 90%;
 	}
 
-	.input-email {;
+	.input-email {
 		width: 100%;
 	}
 
