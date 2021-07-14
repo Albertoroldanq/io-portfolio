@@ -14,7 +14,7 @@ header {
 	padding: 10px 50px;
 	position: sticky;
 	top: 0;
-	z-index: 99;
+	z-index: 10;
 	background: #ffffff;
 }
 
@@ -38,7 +38,7 @@ a {
 .about-me {
 	padding: 50px 20px 100px 100px;
 	display: flex;
-	background:#FED017;
+	background: #FED017;
 	background-image: url("assets/yellow.svg");
 	background-position: center right ;
 	background-size: 60%;
@@ -47,7 +47,7 @@ a {
 
 .about-me a {
 	font-weight: 600;
-	color:#ff0062; 
+	color: #ff0062; 
 	white-space: nowrap;
 }
 
@@ -185,7 +185,7 @@ h2 {
 .project-details {
 	position: absolute;
 	bottom: 0;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 	padding: 10px;	
 	width: 100%;
@@ -215,7 +215,7 @@ h3.project-title {
 }
 
 .projects-wrapper {
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 100px;
@@ -262,10 +262,6 @@ h3.project-title {
 - Added an hidden iframe to avoid opening a new window after submiting
 
 */
-.hide { 
-	display:none; 
-}
-
 
 .contact-form {
 	margin-top: 30px;
@@ -299,11 +295,7 @@ form input, form textarea {
 	color: #09003d;
 }
 
-
-
-
 /*BREAKPOINT 800px*/
-
 @media screen and (max-width: 800px) {
 	header {
 		padding: 0;
@@ -345,11 +337,6 @@ form input, form textarea {
 
 	h3.project-title {
 		font-size: 1.8rem;
-	}
-
-	h1 span {
-		color: #ff0062;
-		white-space: nowrap;
 	}
 
 	.subtitle {
@@ -396,7 +383,8 @@ form input, form textarea {
 		margin-top: 30px;
 	}
 
-	.desc-about-me-wrapper p, .desc-portfolio-wrapper p, .desc-about-me-wrapper h2, .desc-portfolio-wrapper h2, .contact-wrapper, .project-display {
+	.desc-about-me-wrapper p, .desc-portfolio-wrapper p, .desc-about-me-wrapper h2, .desc-portfolio-wrapper h2, 
+	.contact-wrapper, .project-display {
 		width: 100%;
 	}
 
