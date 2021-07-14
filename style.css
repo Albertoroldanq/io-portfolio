@@ -257,6 +257,11 @@ h3.project-title {
 	font-size: 3rem;
 }
 
+
+/*CONTACT FORM  IN FOOTER
+- Added an hidden iframe to avoid opening a new window after submiting
+
+*/
 .hide { 
 	display:none; 
 }
@@ -293,6 +298,9 @@ form input, form textarea {
 	background: #ffffff;
 	color: #09003d;
 }
+
+
+
 
 /*BREAKPOINT 800px*/
 
