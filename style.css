@@ -11,7 +11,7 @@ html {
 }
 
 header {
-	padding: 10px 50px;
+	padding: 10px 100px;
 	position: sticky;
 	top: 0;
 	z-index: 10;
@@ -47,7 +47,8 @@ a {
 
 .about-me a {
 	font-weight: 600;
-	color: #ff0062; 
+	/*color: #ff0062;*/
+	color: hsl(337, 300%, 50%);
 	white-space: nowrap;
 }
 
@@ -78,7 +79,7 @@ nav {
 }
 
 
-h1, .subtitle, h2, h3, .menu-item, .logo, .cta-button a {
+h1, .subtitle, h2, h3, .menu-item, .logo, a.cta-button {
 	letter-spacing: 0.1rem;
 }
 
@@ -96,7 +97,9 @@ h1, .subtitle, h2, h3, .menu-item, .logo, .cta-button a {
 }
 
 .logo:hover {
-	color: #ff0062;
+	/*color: #ff0062;*/
+	color: hsl(337, 300%, 50%);
+
 }
 
 /*FIRST SECTION*/
@@ -108,18 +111,24 @@ h1, .subtitle, h2, h3, .menu-item, .logo, .cta-button a {
 
 .intro-content {
 	color: white;
-	background: rgba(9, 0, 61,0.8);
+	background: rgb(9,0,61);
+	background: -moz-linear-gradient(90deg, rgba(9,0,61,1) 20%, rgba(9,0,61,0.6) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(9,0,61,1) 20%, rgba(9,0,61,0.6) 100%);
+	background: linear-gradient(90deg, rgba(9,0,61,1) 20%, rgba(9,0,61,0.6) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09003d",endColorstr="#09003d",GradientType=1);
 	height: 100%;
-	padding: 150px 100px;
+	padding: 0;
 }
 
 .intro-wrapper {
 	width: 60%;
+	padding: 80px 40px 80px 100px;
 }
 
 h1 {
 	font-size: 3.5rem;
 	font-weight: 700;
+	margin: 0;
 }
 
 h1 span {
@@ -138,16 +147,17 @@ h1 span {
 	line-height: 2.4rem;
 	font-size: 1.7rem;
 	font-weight: 400;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 }
 
-.cta-button a {
+a.cta-button {
 	font-size: 1.2rem;
 	font-weight: 600;
 	padding: 15px 25px;
 	background: #61FED2;
 	border-radius: 40px;
 	color: #09003d;
+	margin: 50px 0;
 }
 
 .coding-lang-wrapper {
@@ -182,28 +192,6 @@ h2 {
 	margin-right: 0;
 }
 
-.project-details {
-	position: absolute;
-	bottom: 0;
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;	
-	width: 100%;
-}
-
-.project-details i {
-	font-size: 2rem;
-	color: white;
-}
-
-h3.project-title {
-	font-size: 2rem;
-	font-weight: 500;
-	color: white;	
-	margin: 0;
-	display: inline;
-}
-
 .desc-portfolio-wrapper {
 	margin-bottom: 20px;
 }
@@ -219,23 +207,44 @@ h3.project-title {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 100px;
-	padding: 0;
+	padding: 0 100px;
 }
 
 .project-display {
-	position: relative;
-	width: 50%;
-	height: 200px;
-	border: 5px solid #F1F4FF;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 500px;
+	border: 40px solid #F1F4FF;
+	border-left: none;
+}
+
+.project-details {
+	padding: 10px;
+	text-align: right;
+}
+
+.project-details i {
+	font-size: 2rem;
+	color: white;
+}
+
+h3.project-title {
+	font-size: 2rem;
+	font-weight: 500;
+	color: white;
+	margin: 0;
+}
+
+.project-link {
+	width: 70%;
 }
 
 .project-screenshot {
 	object-fit: cover;
   	object-position: 50% 20%;
-	position: absolute;
-	max-width: 100%;
 	width: 100%;
-	height:100%;
+	height: 100%;
 }
 
 .contact {
@@ -260,9 +269,7 @@ h3.project-title {
 
 /*CONTACT FORM  IN FOOTER
 - Added an hidden iframe to avoid opening a new window after submiting
-
 */
-
 .contact-form {
 	margin-top: 30px;
 	min-width: 600px;
@@ -295,6 +302,12 @@ form input, form textarea {
 	color: #09003d;
 }
 
+@media screen and (max-width: 1300px) {
+	.intro-wrapper {
+		width: 80%;
+	}
+}
+
 /*BREAKPOINT 800px*/
 @media screen and (max-width: 800px) {
 	header {
@@ -322,12 +335,10 @@ form input, form textarea {
 
 	}
 
-	.intro-content {
-		padding: 50px 20px;
-	}
-
 	.intro-wrapper {
+		padding: 50px 20px;
 		width: 100%;
+
 	}
 
 	h1 {
@@ -355,10 +366,11 @@ form input, form textarea {
 		margin-bottom: 100px;
 	}
 
-	.cta-button a {
+	a.cta-button {
 		font-size: 1.2rem;
 		padding: 15px 25px;
 	}
+
 	.coding-lang-wrapper {
 		padding: 50px 0;
 		justify-content: space-evenly;
