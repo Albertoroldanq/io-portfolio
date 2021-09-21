@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #020c1b;
+    --primary-light: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --dark-slate: #495670;
+    --text: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-text: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100, 255, 218, 0.1);
+}
+
 /* GENERAL SETTINGS*/
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     box-sizing: border-box;
 }
 
@@ -19,10 +36,6 @@ header {
     background: #ffffff;
 }
 
-section {
-    border-bottom: 1px solid #ccc;
-}
-
 p {
     margin: 0;
 }
@@ -32,19 +45,24 @@ a {
     cursor: pointer;
 }
 
+.about-me, .portfolio, .contact {
+    background: #0F0028;
+    padding: 50px 250px 0 250px;
+}
+
 .about-me {
-    padding: 50px 20px 100px 100px;
     display: flex;
-    background: #FED017;
-    background-image: url("assets/github-branches.svg");
-    background-position: right center;
-    background-size: 30%;
-    background-repeat: no-repeat;
+    color: var(--text);
+    background: rgba(15, 0, 40, 1);
+}
+
+.about-me p {
+    color: var(--text);
 }
 
 .about-me a {
-    font-weight: 600;
-    background: #fff;
+    font-weight: 400;
+    color: #61FED2;
     padding: 0 5px;
     border-radius: 3px;
     white-space: nowrap;
@@ -56,6 +74,15 @@ a {
 
 .about-me p {
     margin-bottom: 20px;
+}
+
+.desc-about-me-wrapper, .projects-wrapper {
+    border-bottom: 1px solid var(--text);
+}
+
+.desc-about-me-wrapper {
+    padding-bottom: 100px;
+
 }
 
 nav, .intro-content, .projects-wrapper {
@@ -114,9 +141,9 @@ h1, .subtitle, h2, h3, .menu-item, .logo, a.cta-button {
 .intro-content {
     color: white;
     background: rgb(9, 0, 61);
-    background: -moz-linear-gradient(90deg, rgba(9, 0, 61, 1) 20%, rgba(9, 0, 61, 0.6) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(9, 0, 61, 1) 20%, rgba(9, 0, 61, 0.6) 100%);
-    background: linear-gradient(90deg, rgba(9, 0, 61, 1) 20%, rgba(9, 0, 61, 0.6) 100%);
+    background: -moz-linear-gradient(90deg, rgba(15, 0, 40, 1) 30%, rgba(15, 0, 40, 0.6) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(15, 0, 40, 1) 30%, rgba(15, 0, 40, 0.6) 100%);
+    background: linear-gradient(90deg, rgba(15, 0, 40, 1) 30%, rgba(15, 0, 40, 0.6) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09003d", endColorstr="#09003d", GradientType=1);
     height: 100%;
     padding: 0;
@@ -152,14 +179,14 @@ h1 span {
     margin-bottom: 80px;
 }
 
-a.cta-button, .btn-form  {
+a.cta-button, .btn-form {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 15px 25px;
     background: #61FED2;
     border-radius: 6px;
-    color: #09003d;
+    color: #0F0028;
     margin: 50px 0;
     border: none;
 }
@@ -171,20 +198,6 @@ a.cta-button:hover, .btn-form:hover {
     cursor: pointer;
 }
 
-/*.btn-form {*/
-/*    background: none;*/
-/*    cursor: pointer;*/
-/*    color: #ffffff;*/
-/*    border: 1px solid #ffffff;*/
-/*    font-weight: 500;*/
-/*}*/
-
-/*{*/
-/*    background: #ffffff;*/
-/*    color: #09003d;*/
-/*    transition: 0.5s;*/
-/*    transition-timing-function: ease-out*/
-/*}*/
 
 .coding-lang-wrapper {
     background: #F1F4FF;
@@ -195,40 +208,33 @@ a.cta-button:hover, .btn-form:hover {
 }
 
 .coding-lang-wrapper i {
-    font-size: 8rem;
+    font-size: 5rem;
+    color: #0F0028;
 }
-
-/*     */
 
 h2 {
     font-size: 3rem;
     font-weight: 600;
     line-height: 3rem;
     scroll-margin: 20px;
+    color: var(--lightest-text);
 }
 
- .desc-portfolio-wrapper p, .contact p {
+.desc-portfolio-wrapper p, .contact p {
     font-size: 1.4rem;
     line-height: 2.4rem;
     font-weight: 300;
 }
 
 .desc-about-me-wrapper p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2.4rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .desc-about-me-wrapper p, .desc-portfolio-wrapper p, .desc-about-me-wrapper h2, .desc-portfolio-wrapper h2, .contact-wrapper {
     width: 70%;
     margin-right: 0;
-}
-
-.portfolio {
-    color: #ffffff;
-    background: #0F0028;
-    padding: 50px 100px 20px 100px;
-
 }
 
 .portfolio h2 {
@@ -237,6 +243,8 @@ h2 {
 
 .desc-portfolio-wrapper p {
     margin-bottom: 80px;
+    color: var(--text);
+
 }
 
 .projects-wrapper {
@@ -249,9 +257,9 @@ h2 {
 .project-display {
     display: flex;
     width: 100%;
-    height: 450px;
+    height: 350px;
     position: relative;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 
 .project-display-right {
@@ -296,7 +304,6 @@ h2 {
     font-size: 1.6rem;
 }
 
-
 h3.project-title {
     font-size: 1.8rem;
     width: 70%;
@@ -311,6 +318,10 @@ h3.project-title {
     width: 60%;
 }
 
+.project-details {
+    padding: 0;
+}
+
 .project-details-right .project-skills span {
     margin-left: 10px;
 }
@@ -321,6 +332,8 @@ h3.project-title {
 
 .project-skills span, .project-type {
     font-family: 'Roboto Mono', sans-serif;
+    font-size: 0.9rem;
+    color: var(--lightest-text);
 }
 
 .project-icons {
@@ -332,6 +345,10 @@ h3.project-title {
     margin-right: 15px;
 }
 
+.project-icons i {
+    color: var(--text);
+}
+
 .project-type, .project-icons i:hover, .icon:hover {
     color: #61FED2;
     transition: 0.3s;
@@ -340,10 +357,10 @@ h3.project-title {
 
 .project-description {
     color: #ccc;
-    background: #0D0040;
+    background: #233554;
     padding: 35px 25px;
-    line-height: 1.6rem;
-    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-size: 1rem;
     font-family: "Roboto Mono", sans-serif;
     border-radius: 3px;
     box-shadow: 0 10px 30px -15px #000;
@@ -382,7 +399,6 @@ h3.project-title {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background: #0F0028;
     color: #ffffff;
 }
 
@@ -400,9 +416,6 @@ h3.project-title {
 - Added an hidden iframe to avoid opening a new window after submiting
 */
 
-.contact {
-    padding: 50px 20px 50px 100px;
-}
 
 .contact-form {
     margin-top: 30px;
@@ -500,11 +513,7 @@ form input, form textarea {
     }
 
     .coding-lang-wrapper i {
-        font-size: 5rem;
-    }
-
-    .about-me {
-        background-size: 100%;
+        font-size: 3rem;
     }
 
     .about-me, .desc-portfolio-wrapper, .contact {
