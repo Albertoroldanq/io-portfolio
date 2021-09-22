@@ -10,10 +10,11 @@
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-text: #495670;
     --text: #8892b0;
+    --highlighted-links: #61FED2;
+    --highlighted-links-hover: #FF0062;
     --light-slate: #a8b2d1;
     --lightest-text: #ccd6f6;
     --white: #e6f1ff;
-    --green: #64ffda;
     --green-tint: rgba(100, 255, 218, 0.1);
 }
 
@@ -78,7 +79,7 @@ a {
 }
 
 .about-me a:hover {
-    color: #ff0062;
+    color: var(--highlighted-links-hover);
 }
 
 .about-me p {
@@ -91,7 +92,6 @@ a {
 
 .desc-about-me-wrapper {
     padding-bottom: 100px;
-
 }
 
 nav, .intro-content, .projects-wrapper {
@@ -134,10 +134,9 @@ h1, .subtitle, h2, h3, .menu-item, .logo, a.cta-button {
 
 .logo:hover, .menu-item:hover {
     /*color: #ff0062;*/
-    color: hsl(337, 300%, 50%);
+    color: var(--highlighted-links-hover);
     transition: 0.3s;
-    transition-timing-function: ease-out
-
+    transition-timing-function: ease-out;
 }
 
 /*FIRST SECTION*/
@@ -170,7 +169,7 @@ h1 {
 }
 
 h1 span {
-    color: #ff0062;
+    color: var(--highlighted-links-hover);
     white-space: nowrap;
 }
 
@@ -399,7 +398,7 @@ h3.project-title {
     font-size: 1rem;
     font-family: "Roboto Mono", sans-serif;
     border-radius: 3px;
-    box-shadow: 0 10px 30px -15px #000;
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
 }
 
 .project-link {
