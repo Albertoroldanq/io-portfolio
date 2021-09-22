@@ -265,8 +265,11 @@ h2::after {
     font-weight: 300;
 }
 
-.desc-about-me-wrapper p, .desc-portfolio-wrapper p, .desc-about-me-wrapper h2, .desc-portfolio-wrapper h2, .contact-wrapper {
+.desc-about-me-wrapper p, .desc-portfolio-wrapper p {
     width: 70%;
+}
+
+.desc-about-me-wrapper p, .desc-portfolio-wrapper p, .desc-about-me-wrapper h2, .desc-portfolio-wrapper h2, .contact-wrapper {
     margin-right: 0;
 }
 
