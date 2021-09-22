@@ -57,7 +57,7 @@ a {
 
 .about-me, .portfolio, .contact {
     background: #0F0028;
-    padding: 150px 250px 0 250px;
+    padding: 150px 15% 0 15%;
 }
 
 .about-me {
@@ -357,6 +357,10 @@ h3.project-title {
     padding: 0;
 }
 
+.project-skills span {
+    line-height: 1.4rem;
+}
+
 .project-details-right .project-skills span {
     margin-left: 10px;
 }
@@ -478,7 +482,7 @@ form input, form textarea {
 }
 
 /*BREAKPOINT 800px*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     header {
         padding: 0;
     }
@@ -550,7 +554,7 @@ form input, form textarea {
         font-size: 3rem;
     }
 
-    .about-me, .desc-portfolio-wrapper, .contact {
+    .about-me, .portfolio, .contact {
         padding: 20px 20px 20px 20px;
     }
 
