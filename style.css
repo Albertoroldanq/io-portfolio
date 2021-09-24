@@ -494,10 +494,13 @@ form input, form textarea {
 
 @media screen and (max-width: 1300px) {
     .intro-wrapper {
-        width: 80%;
+        width: 70%;
     }
     .about-me, .portfolio, .contact {
         padding: 20px 10% 20px 10%;
+    }
+    .intro-wrapper {
+        padding: 20px 10% 100px 10%;
     }
 }
 
