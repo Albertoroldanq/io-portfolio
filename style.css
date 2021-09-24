@@ -114,8 +114,7 @@ nav {
     padding: 5px 10px 5px 0;
 }
 
-
-h1, .subtitle, h2, h3, .menu-item, .logo, a.cta-button {
+h1, h2, h3, .menu-item, .logo, a.cta-button {
     letter-spacing: 0.1rem;
 }
 
@@ -172,13 +171,14 @@ h1 .intro-title-small {
     margin: 0 0 20px 10px;
     font-family: "Roboto Mono", sans-serif;
     display: block;
+    font-weight: 400;
 }
 
 h1 .intro-title-name {
     font-size: 3.5rem;
     display: block;
     color: var(--lightest-text);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 h1 .intro-title-big {
@@ -194,7 +194,7 @@ h1 .highlight {
     line-height: 2rem;
     font-size: 1.3rem;
     font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     margin-top: 20px;
 }
 
@@ -487,16 +487,22 @@ form input, form textarea {
 
 @media screen and (max-width: 1300px) {
     .intro-wrapper {
-        width: 80%;
+        width: 100%;
         padding: 20px 10% 100px 10%;
     }
     .about-me, .portfolio, .contact {
         padding: 20px 10% 20px 10%;
     }
+
+    h1 .intro-title-big, h1 .intro-title-name {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+        margin-bottom: 0;
+    }
 }
 
-/*BREAKPOINT 800px*/
-@media screen and (max-width: 900px) {
+/*BREAKPOINT 992px*/
+@media screen and (max-width: 992px) {
     header {
         padding: 0;
     }
@@ -518,35 +524,32 @@ form input, form textarea {
         width: 100%;
         justify-content: space-evenly;
         padding-top: 10px;
-
     }
 
     .intro-wrapper {
-        padding: 50px 20px;
+        padding: 50px 40px;
         width: 100%;
-
     }
 
     h1 {
-        font-size: 2.6rem;
-        margin: 0;
+        line-height: 2.6rem;
     }
 
     h1 .intro-title-small {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    h1 .intro-title-name, h1 .intro-title-big {
+        font-size: 2.6rem;
     }
 
     h1 .intro-title-name {
-        font-size: 3rem;
-    }
-
-    h1 .intro-title-big {
-        font-size: 3.5rem;
+        margin-bottom: 15px;
     }
 
     h2 {
         font-size: 2.2rem;
-        line-height: 2.2rem;
+        line-height: 2.4rem;
     }
 
     h3.project-title {
@@ -554,15 +557,10 @@ form input, form textarea {
         font-weight: 700;
     }
 
-    .subtitle {
-        font-size: 2rem;
-        margin: 20px 0;
-    }
-
     .desc-intro {
-        line-height: 2rem;
-        font-size: 1.3rem;
-        margin-bottom: 100px;
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
     }
 
     a.cta-button {
@@ -581,7 +579,7 @@ form input, form textarea {
     }
 
     .about-me, .portfolio, .contact {
-        padding: 20px 20px 20px 20px;
+        padding: 20px 40px 20px 40px;
     }
 
     .projects-wrapper {
@@ -603,7 +601,11 @@ form input, form textarea {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+    .about-me, .portfolio, .contact {
+        padding: 20px 20px 20px 20px;
+    }
+
     .portfolio::before, .contact::before {
         content: "";
         display: inline-block;
