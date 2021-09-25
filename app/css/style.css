@@ -557,6 +557,10 @@ form input, form textarea {
         font-weight: 700;
     }
 
+    .project-skills {
+        width: 100%;
+    }
+
     .desc-intro {
         line-height: 1.8rem;
         font-size: 1.2rem;
