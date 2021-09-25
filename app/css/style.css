@@ -5,6 +5,7 @@
     --white: #F1F4FF;
     --primary: #0a192f;
     --primary-light: #0a192f;
+    --navy: #233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-text: #495670;
     --text: #8892b0;
@@ -35,6 +36,7 @@ header {
     top: 0;
     z-index: 99;
     background: var(--white);
+    box-shadow: 0px 1px 10px var(--primary);
 }
 
 .about-me, .contact {
@@ -42,7 +44,7 @@ header {
 
 }
 
-.portfolio, .contact {
+.portfolio {
     scroll-margin: -100px;
 }
 
@@ -99,7 +101,11 @@ nav {
 }
 
 /* HEADER */
-.menu-items-wrapper {
+.menu-mobile {
+    display: none;
+}
+
+.menu-desktop {
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -217,6 +223,7 @@ a.cta-button {
 a.cta-button {
     margin: 50px 0;
 }
+
 .btn-form {
     margin: 0px 0 50px 0;
 }
@@ -400,7 +407,7 @@ h3.project-title {
 
 .project-description {
     color: var(--lightest-text);
-    background: #233554;
+    background: var(--navy);
     padding: 35px 25px;
     line-height: 1.4rem;
     font-size: 1rem;
@@ -484,6 +491,7 @@ form input, form textarea {
         width: 100%;
         padding: 20px 10% 100px 10%;
     }
+
     .about-me, .portfolio, .contact {
         padding: 20px 10% 20px 10%;
     }
@@ -493,36 +501,34 @@ form input, form textarea {
         line-height: 2.8rem;
         margin-bottom: 0;
     }
+
+    .about-me, .contact, .portfolio {
+        scroll-margin: 0px;
+    }
 }
 
 /*BREAKPOINT 992px*/
 @media screen and (max-width: 992px) {
     header {
+        position: fixed;
+        width: 100%;
         padding: 0;
+        transition: top 0.3s;
+    }
+
+    header.hidden {
+        position: fixed;
+        top: -100px;
+        transition: top 0.3s;
     }
 
     nav {
         padding: 10px;
+        justify-content: center;
     }
 
-    section {
-        scroll-margin: 60px;
-    }
-
-    .logo, .menu-items {
-        font-size: 1rem;
-        letter-spacing: 0;
-    }
-
-    .menu-items-wrapper {
-        width: 100%;
-        justify-content: space-evenly;
-        padding-top: 10px;
-    }
-
-    .intro-wrapper {
-        padding: 50px 40px;
-        width: 100%;
+    .menu-desktop {
+        display: none;
     }
 
     h1 {
@@ -571,7 +577,9 @@ form input, form textarea {
     .coding-lang-wrapper i {
         font-size: 3rem;
     }
-
+    .intro-wrapper{
+        padding: 20px 40px 60px 40px;
+    }
     .about-me, .portfolio, .contact {
         padding: 20px 40px 20px 40px;
     }
@@ -593,13 +601,101 @@ form input, form textarea {
     .input-email {
         width: 100%;
     }
+
+    /*HAMBURGER MENU*/
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        background-color: var(--lightest-text);
+        z-index: 100;
+    }
+
+    .menu-btn i {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 40px;
+        color: var(--primary);
+    }
+
+    .menu-btn:hover {
+        cursor: pointer;
+    }
+
+    .overlay {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        border-radius: 100%;
+        background-color: var(--primary);
+        transition-duration: 700ms;
+        z-index: 4;
+    }
+
+    .overlay.active {
+        transform: scale(100, 100);
+        height: 100vh;
+        width: 100vh;
+    }
+
+    .menu-items-wrapper-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: -5;
+        opacity: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-wrapper-mobile {
+        display: flex;
+        flex-direction: column;
+        transition-duration: 200ms;
+
+    }
+
+    .menu-items-wrapper-mobile.active {
+        display: flex;
+        transition-delay: 0ms;
+        opacity: 1;
+        z-index: 5;
+    }
+
+    .menu-item-mobile {
+        text-align: center;
+        padding: 10px;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: var(--lightest-text);
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .intro-wrapper{
+        padding: 20px 20px 40px 20px;
+    }
     .about-me, .portfolio, .contact {
         padding: 20px 20px 20px 20px;
     }
 
+    .desc-intro{
+        width: 100%;
+    }
     .portfolio::before, .contact::before {
         content: "";
         display: inline-block;
@@ -609,7 +705,7 @@ form input, form textarea {
         background-color: var(--dark-text);
     }
 
-    .desc-about-me-wrapper{
+    .desc-about-me-wrapper {
         padding-bottom: 0;
     }
 
@@ -621,7 +717,7 @@ form input, form textarea {
         display: flex;
         justify-content: center;
         position: relative;
-        height: 400px;
+        height: 500px;
         margin: 12px 0;
     }
 
@@ -629,7 +725,7 @@ form input, form textarea {
         padding: 15px;
     }
 
-    .project-display-left, .project-display-right  {
+    .project-display-left, .project-display-right {
         justify-content: flex-start;
     }
 
@@ -646,6 +742,9 @@ form input, form textarea {
         padding: 0;
         background: none;
         box-shadow: none;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        letter-spacing: 0;
     }
 
     .project-details {
@@ -655,5 +754,11 @@ form input, form textarea {
 
     .project-details-right .project-skills span, .project-details-left .project-skills span {
         margin: 0 10px 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-display {
+        height: 550px;
     }
 }
