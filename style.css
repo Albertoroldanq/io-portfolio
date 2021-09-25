@@ -183,6 +183,7 @@ h1 .intro-title-big {
 
 h1 .highlight {
     color: var(--highlighted-links-secondary);
+    font-family: 'Merriweather', sans-serif;
 }
 
 .desc-intro {
