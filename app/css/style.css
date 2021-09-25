@@ -509,6 +509,8 @@ form input, form textarea {
 /*BREAKPOINT 992px*/
 @media screen and (max-width: 992px) {
     header {
+        position: fixed;
+        width: 100%;
         padding: 0;
         transition: top 0.3s;
 
@@ -516,7 +518,6 @@ form input, form textarea {
 
     header.hidden {
         position: fixed;
-        width: 100%;
         top: -100px;
         transition: top 0.3s;
     }
