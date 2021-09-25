@@ -5,6 +5,7 @@
     --white: #F1F4FF;
     --primary: #0a192f;
     --primary-light: #0a192f;
+    --navy: #233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-text: #495670;
     --text: #8892b0;
@@ -42,7 +43,7 @@ header {
 
 }
 
-.portfolio, .contact {
+.portfolio {
     scroll-margin: -100px;
 }
 
@@ -99,7 +100,11 @@ nav {
 }
 
 /* HEADER */
-.menu-items-wrapper {
+.menu-mobile{
+    display:none;
+}
+
+.menu-desktop {
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -400,7 +405,7 @@ h3.project-title {
 
 .project-description {
     color: var(--lightest-text);
-    background: #233554;
+    background: var(--navy);
     padding: 35px 25px;
     line-height: 1.4rem;
     font-size: 1rem;
@@ -493,6 +498,9 @@ form input, form textarea {
         line-height: 2.8rem;
         margin-bottom: 0;
     }
+    .about-me, .contact, .portfolio {
+        scroll-margin: 0px;
+    }
 }
 
 /*BREAKPOINT 992px*/
@@ -505,19 +513,10 @@ form input, form textarea {
         padding: 10px;
     }
 
-    section {
-        scroll-margin: 60px;
-    }
 
-    .logo, .menu-items {
-        font-size: 1rem;
-        letter-spacing: 0;
-    }
 
-    .menu-items-wrapper {
-        width: 100%;
-        justify-content: space-evenly;
-        padding-top: 10px;
+    .menu-desktop {
+        display: none;
     }
 
     .intro-wrapper {
@@ -593,6 +592,86 @@ form input, form textarea {
     .input-email {
         width: 100%;
     }
+
+    /*HAMBURGER MENU*/
+    .menu-mobile{
+        display:block;
+    }
+
+    .menu-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        background-color: var(--lightest-text);
+        z-index: 100;
+    }
+
+    .menu-btn i {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 40px;
+        color: var(--primary);
+    }
+
+    .menu-btn:hover{
+        cursor: pointer;
+    }
+
+    .overlay {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        border-radius: 100%;
+        background-color: var(--primary);
+        transition-duration: 700ms;
+        z-index: 4;
+    }
+    .overlay.active {
+        transform: scale(100, 100);
+        height: 100vh;
+        width: 100vh;
+    }
+
+    .menu-items-wrapper-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: -5;
+        opacity: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-wrapper-mobile {
+        display: flex;
+        flex-direction: column;
+        transition-duration: 200ms;
+
+    }
+    .menu-items-wrapper-mobile.active {
+        display: flex;
+        transition-delay: 0ms;
+        opacity: 1;
+        z-index: 5;
+    }
+
+    .menu-item-mobile {
+        text-align: center;
+        padding: 10px;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: var(--lightest-text);
+    }
+
 }
 
 @media screen and (max-width: 768px) {

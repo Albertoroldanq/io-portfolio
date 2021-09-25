@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/5b176a6be4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="app/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="app/css/style.css">
     <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <script src="app/vendor/js/jquery-3.6.0.min.js"></script>
+    <script defer src="app/js/index.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -30,10 +32,22 @@
 <header>
     <nav>
         <a class="logo" href="#">Alberto Roldan</a>
-        <div class="menu-items-wrapper">
-            <a class="menu-item" href="#about-me">About me</a>
-            <a class="menu-item" href="#portfolio">Projects</a>
-            <a class="menu-item" href="#contact">Contact</a>
+        <div class="menu-desktop">
+                <a class="menu-item" href="#about-me">About me</a>
+                <a class="menu-item" href="#portfolio">Projects</a>
+                <a class="menu-item" href="#contact">Contact</a>
+        </div>
+        <div class="menu-mobile">
+            <div class="menu-btn"><i class="menu-icon fas fa-bars"></i></div>
+            <div class="overlay"></div>
+            <div class="menu-items-wrapper-mobile">
+                <div class="menu-wrapper-mobile">
+                    <a class="menu-item-mobile" href="#about-me">About me</a>
+                    <a class="menu-item-mobile" href="#portfolio">Projects</a>
+                    <a class="menu-item-mobile" href="#contact">Contact</a>
+                </div>
+                <div class="menu-underlay"></div>
+            </div>
         </div>
     </nav>
 </header>
@@ -135,7 +149,7 @@
                 <a class="project-link" href="https://2021-jul-pc-games-listing.dev.io-academy.uk" target="_blank">
                     <div class="project-screenshot-overlay"></div>
                     <!--<img class="project-screenshot" alt="project film quiz"
-                         src="assets/projects-screenshots/guess-the-film.png">-->
+                         app="assets/projects-screenshots/guess-the-film.png">-->
                 </a>
             </div>
 
