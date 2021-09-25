@@ -742,8 +742,8 @@ form input, form textarea {
         padding: 0;
         background: none;
         box-shadow: none;
-        font-size: 0.9rem;
-        line-height: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
         letter-spacing: 0;
     }
 
@@ -754,5 +754,11 @@ form input, form textarea {
 
     .project-details-right .project-skills span, .project-details-left .project-skills span {
         margin: 0 10px 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-display {
+        height: 600px;
     }
 }
