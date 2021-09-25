@@ -36,6 +36,7 @@ header {
     top: 0;
     z-index: 99;
     background: var(--white);
+    box-shadow: 0px 1px 10px var(--primary);
 }
 
 .about-me, .contact {
@@ -525,7 +526,6 @@ form input, form textarea {
     nav {
         padding: 10px;
         justify-content: center;
-        box-shadow: 0px 1px 10px var(--primary);
     }
 
     .menu-desktop {
