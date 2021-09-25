@@ -100,8 +100,8 @@ nav {
 }
 
 /* HEADER */
-.menu-mobile{
-    display:none;
+.menu-mobile {
+    display: none;
 }
 
 .menu-desktop {
@@ -222,6 +222,7 @@ a.cta-button {
 a.cta-button {
     margin: 50px 0;
 }
+
 .btn-form {
     margin: 0px 0 50px 0;
 }
@@ -489,6 +490,7 @@ form input, form textarea {
         width: 100%;
         padding: 20px 10% 100px 10%;
     }
+
     .about-me, .portfolio, .contact {
         padding: 20px 10% 20px 10%;
     }
@@ -498,6 +500,7 @@ form input, form textarea {
         line-height: 2.8rem;
         margin-bottom: 0;
     }
+
     .about-me, .contact, .portfolio {
         scroll-margin: 0px;
     }
@@ -512,7 +515,6 @@ form input, form textarea {
     nav {
         padding: 10px;
     }
-
 
 
     .menu-desktop {
@@ -594,8 +596,8 @@ form input, form textarea {
     }
 
     /*HAMBURGER MENU*/
-    .menu-mobile{
-        display:block;
+    .menu-mobile {
+        display: block;
     }
 
     .menu-btn {
@@ -620,7 +622,7 @@ form input, form textarea {
         color: var(--primary);
     }
 
-    .menu-btn:hover{
+    .menu-btn:hover {
         cursor: pointer;
     }
 
@@ -633,6 +635,7 @@ form input, form textarea {
         transition-duration: 700ms;
         z-index: 4;
     }
+
     .overlay.active {
         transform: scale(100, 100);
         height: 100vh;
@@ -651,12 +654,14 @@ form input, form textarea {
         justify-content: center;
         align-items: center;
     }
+
     .menu-wrapper-mobile {
         display: flex;
         flex-direction: column;
         transition-duration: 200ms;
 
     }
+
     .menu-items-wrapper-mobile.active {
         display: flex;
         transition-delay: 0ms;
@@ -688,7 +693,7 @@ form input, form textarea {
         background-color: var(--dark-text);
     }
 
-    .desc-about-me-wrapper{
+    .desc-about-me-wrapper {
         padding-bottom: 0;
     }
 
@@ -708,7 +713,7 @@ form input, form textarea {
         padding: 15px;
     }
 
-    .project-display-left, .project-display-right  {
+    .project-display-left, .project-display-right {
         justify-content: flex-start;
     }
 
