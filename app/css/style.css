@@ -514,7 +514,6 @@ form input, form textarea {
         width: 100%;
         padding: 0;
         transition: top 0.3s;
-
     }
 
     header.hidden {
@@ -530,11 +529,6 @@ form input, form textarea {
 
     .menu-desktop {
         display: none;
-    }
-
-    .intro-wrapper {
-        padding: 50px 40px;
-        width: 100%;
     }
 
     h1 {
@@ -583,7 +577,9 @@ form input, form textarea {
     .coding-lang-wrapper i {
         font-size: 3rem;
     }
-
+    .intro-wrapper{
+        padding: 20px 40px 60px 40px;
+    }
     .about-me, .portfolio, .contact {
         padding: 20px 40px 20px 40px;
     }
@@ -687,14 +683,19 @@ form input, form textarea {
         letter-spacing: 2px;
         color: var(--lightest-text);
     }
-
 }
 
 @media screen and (max-width: 768px) {
+    .intro-wrapper{
+        padding: 20px 20px 40px 20px;
+    }
     .about-me, .portfolio, .contact {
         padding: 20px 20px 20px 20px;
     }
 
+    .desc-intro{
+        width: 100%;
+    }
     .portfolio::before, .contact::before {
         content: "";
         display: inline-block;
