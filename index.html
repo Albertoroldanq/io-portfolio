@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!--FONT AWESOME LIBRARY FOR ICONS-->
     <script src="https://kit.fontawesome.com/5b176a6be4.js" crossorigin="anonymous"></script>
-
-    <!--NORMALIZE STYLESHEET FOR BROWSER COMPATIBILITY-->
     <link rel="stylesheet" type="text/css" href="normalize.css">
-
-    <!--CUSTOM STYLESHEET-->
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!--FAVICON-->
     <link rel="icon" type="image/png" href="assets/favicon.png"/>
 
-    <!--METATAG-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+
     <title>Alberto's Portfolio</title>
+    <meta name="title" content="Alberto Roldan - Full-Stack Developer">
+    <meta name="description" content="Take a look at my portfolio. Get to know me better and checkout my recent projects. Feel free to contact me!">
+
+    <meta property="og:image" content="https://https://albertoroldanq.github.io/io-portfolio/cover.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://albertoroldanq.github.io/io-portfolio/">
+    <meta property="og:title" content="Alberto Roldan - Full-Stack Developer">
+    <meta property="og:description" content="Take a look at my portfolio. Get to know me better and checkout my recent projects. Feel free to contact me!">
+
+    <meta property="twitter:image" content="https://albertoroldanq.github.io/io-portfolio/cover.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://albertoroldanq.github.io/io-portfolio/">
+    <meta property="twitter:title" content="Alberto Roldan - Full-Stack Developer">
+    <meta property="twitter:description" content="Take a look at my portfolio. Get to know me better and checkout my recent projects. Feel free to contact me!">
 </head>
 
 <body>
@@ -33,12 +39,7 @@
 </header>
 
 <main>
-    <!--This is the first section (introduction), with the coding screen background and a background transparency-->
     <section class="intro">
-        <!--
-        --- Desc as description (desc-intro) ---
-            div childs that will help me to arrange the content if I add more elements such as images
-        -->
         <div class="intro-content">
             <div class="intro-wrapper">
                 <h1><span class="intro-title-small">Hi, my name is </span><span
@@ -47,14 +48,10 @@
                 </h1>
                 <p class="desc-intro">I develop each project with the most suitable tools to achieve the best results. I
                     value simple content structures and user friendly websites</p>
-
-                <!--cta as "call to action"-->
                 <a class="cta-button" href="#portfolio">Check out my work</a>
             </div>
         </div>
     </section>
-
-    <!--Section with the coding languages icons-->
 
     <section class="coding-lang">
         <div class="coding-lang-wrapper">
@@ -66,48 +63,35 @@
         </div>
     </section>
 
-    <!--Set id for each section to create jumplinks from the top menu-->
     <section class="about-me" id="about-me">
         <div class="desc-about-me-wrapper">
             <h2><span>01.</span>About me</h2>
             <p>Hi, I’m Alberto. I started my journey of coding more than 4 years ago. After taking numerous online
                 courses about HTML, CSS and JavaScript, I decided to make of my passion a profession. So I joined <a
-                        href="https://io-academy.uk/" target="_blank">IO Academy coding Bootcamp</a> to become a
+                        href="https://io-academy.uk/" target="_blank">iO Academy coding Bootcamp</a> to become a
                 Full-Stack Software Developer.</p>
-
             <p>I have always been curious about technology and specially everything that can be done digitally.</p>
         </div>
     </section>
 
     <section class="portfolio" id="portfolio">
-
-        <!--I used .desc-portofolio-wrapper div to group the title and the small description so it will be easier to re-arrange the section if I want to add more content at the right-->
-
         <div class="desc-portfolio-wrapper">
             <h2><span>02.</span>Projects</h2>
             <p>Here is a small selection of the projects I have worked on during my training.</p>
         </div>
-
-        <!--.projects-wrapper class will be set as flexbox -->
-
         <div class="projects-wrapper">
-            <!--Wrap it in a tag to link the whole group to the url project-->
-
-            <!--With the .project-display class I can group Image wrapped in an <a> tag and the project details -->
-
             <div class="project-display project-display-left">
                 <a class="project-link" href="https://aptitude-test.dev.io-academy.uk/adminPage.html" target="_blank">
                     <div class="project-screenshot-overlay"></div>
                     <img class="project-screenshot" alt="io aptitude test"
                          src="assets/projects-screenshots/io-academy-aptitude-test.png">
                 </a>
-                <!--With the .project-details class I can group the project title and the github icon and arrange them at the bottom but inside the image-->
                 <div class="project-details-right project-details">
                     <p class="project-type">App in production</p>
                     <h3 class="project-title">Aptitude Test</h3>
                     <div>
                         <p class="project-description">
-                            Added new features and debugged an existing application using a pre-built RESTful API.
+                            Added new features and debugged an existing application using a pre-built <span class="highlight">RESTful API.</span>
                             Fetching data to store and retrieve from the backend API.
                             To see the admin panel: hello@mayden.academy
                         </p>
@@ -123,17 +107,48 @@
                         <a href="https://aptitude-test.dev.io-academy.uk/" target="_blank"><i
                                 class="fas fa-external-link-alt"></i></a>
                     </div>
-
                 </div>
             </div>
+
             <div class="project-display project-display-right">
                 <div class="project-details-left project-details">
-                    <p class="project-type">iO Academy Project</p>
+                    <p class="project-type">PHP OOP App</p>
+                    <h3 class="project-title">Game Listing</h3>
+                    <div>
+                        <p class="project-description">
+                            OOP app that displays a list of PC Games from a MySQL DB previously populated from an API using cURL.
+                            App architecture, wireframes and DB structure were signed off by the PO.
+                            We used autoloading <span class="highlight">following PSR-4 standards</span> and successfully unit tested it.
+                        </p>
+                    </div>
+                    <div class="project-skills">
+                        <span>OOP</span>
+                        <span>MySQL</span>
+                        <span>PHPUnit</span>
+                        <span>cURL</span>
+                    </div>
+                    <div class="project-icons">
+                        <a href="https://github.com/iO-Academy/2021-jul-game-listing" target="_blank"><i class="fab fa-github-square"></i></a>
+                        <a href="https://2021-jul-pc-games-listing.dev.io-academy.uk" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <a class="project-link" href="https://2021-jul-pc-games-listing.dev.io-academy.uk" target="_blank">
+                    <div class="project-screenshot-overlay"></div>
+                    <!--<img class="project-screenshot" alt="project film quiz"
+                         src="assets/projects-screenshots/guess-the-film.png">-->
+                </a>
+            </div>
+
+            <div class="project-display project-display-right">
+                <div class="project-details-left project-details">
+                    <p class="project-type">JavaScript App</p>
                     <h3 class="project-title">Film Quiz</h3>
                     <div>
-                        <p class="project-description">With the .project-details class I can group the project title and
-                            the github icon and arrange
-                            them at the bottom but inside the image</p>
+                        <p class="project-description">
+                            In this app we implemented fetch to retrieve the data from a JSON file.
+                            This game quiz displays movie quotes randomly, and has a scoring accumulator and a countdown time.
+                            We also added a hard mode which skips to the next quote every 5 seconds. How many points will you be able to get?
+                        </p>
                     </div>
                     <div class="project-skills">
                         <span>JavaScript</span>
@@ -143,28 +158,22 @@
                         <a href="https://dev.io-academy.uk/projects/2021-july/guess-the-film/" target="_blank"><i
                                 class="fas fa-external-link-alt"></i></a>
                     </div>
-
                 </div>
-                <a class="project-link" href="https://dev.io-academy.uk/projects/2021-july/guess-the-film/g" target="_blank">
+                <a class="project-link" href="https://dev.io-academy.uk/projects/2021-july/guess-the-film/" target="_blank">
                     <div class="project-screenshot-overlay"></div>
                     <img class="project-screenshot" alt="project film quiz"
                          src="assets/projects-screenshots/guess-the-film.png">
                 </a>
             </div>
         </div>
-
     </section>
 </main>
-
 <footer class="contact" id="contact">
     <div class="contact-wrapper">
         <h2><span>03.</span>Contact me</h2>
         <p>The best way to get in touch with me is via email, but if you prefer social media or the contact form I have
             included those too.</p>
-
         <div class="contact-icons-wrapper">
-
-            <!--i tags to insert icons of each social media link-->
             <a class="icon" href="https:linkedin.com/in/albertoroldanq" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
@@ -174,23 +183,9 @@
             <a class="icon" href="https://github.com/Albertoroldanq" target="_blank">
                 <i class="fab fa-github-square"></i>
             </a>
-
         </div>
     </div>
-
-
-    <!--
-        POSSIBLE CONTACT FORM FOR GITHUB PAGES
-        https://dev.to/charalambosioannou/create-a-static-webpage-with-a-contact-form-on-github-pages-3532
-
-        - I would like to add a message once submitted but it probably needs JS
-        - Also, I would like to reset the form after submitting, but I think I might need JS
-    -->
-
     <div class="contact-form">
-
-        <!--Usig the formspree service for the contact form it requires to open a new tab or window to make it work since the captcha is run on that new window-->
-
         <form action="https://formspree.io/f/xayadevj" method="POST" target="_blank">
             <input type="hidden" name="_subject" value="Contact request from personal website"/>
             <input class="input-email" type="email" name="_replyto" placeholder="Your email" required>
