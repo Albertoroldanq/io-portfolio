@@ -196,7 +196,7 @@ h1 .intro-title-big {
     width: 90%;
     line-height: 2rem;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 50px;
     margin-top: 20px;
 }
@@ -438,11 +438,19 @@ h3.project-title {
     width: 65%;
     height: 100%;
     position: absolute;
-    background: rgba(97, 254, 210, 0.3);
+    background: var(--highlighted-links);
+    opacity: 0.3;
     z-index: 20;
 }
 
-.project-screenshot-overlay:hover {
+.project-screenshot-overlay-2 {
+    background: var(--navy);
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+
+.no-background {
     background: none;
     transition: 0.3s;
     transition-timing-function: ease-in;
@@ -586,9 +594,11 @@ form input, form textarea {
     .coding-lang-wrapper i {
         font-size: 3rem;
     }
-    .intro-wrapper{
+
+    .intro-wrapper {
         padding: 20px 40px 60px 40px;
     }
+
     .about-me, .portfolio, .contact {
         padding: 20px 40px 20px 40px;
     }
@@ -695,16 +705,18 @@ form input, form textarea {
 }
 
 @media screen and (max-width: 768px) {
-    .intro-wrapper{
+    .intro-wrapper {
         padding: 20px 20px 40px 20px;
     }
+
     .about-me, .portfolio, .contact {
         padding: 20px 20px 20px 20px;
     }
 
-    .desc-intro{
+    .desc-intro {
         width: 100%;
     }
+
     .portfolio::before, .contact::before {
         content: "";
         display: inline-block;
