@@ -787,6 +787,10 @@ form input, form textarea {
     .project-details-right .project-skills span, .project-details-left .project-skills span {
         margin: 0 10px 0 0;
     }
+
+    .contact-form {
+        min-width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) {
