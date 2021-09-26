@@ -289,7 +289,13 @@ h2 span {
     margin-bottom: 10px;
 }
 
-.desc-portfolio-wrapper p {
+p.portfolio-subtitle {
+    margin: 20px 0 0 0;
+    font-size: 1.5rem;
+    color: var(--lightest-text);
+}
+
+.desc-portfolio-wrapper {
     margin-bottom: 80px;
 }
 
@@ -730,7 +736,7 @@ form input, form textarea {
         padding-bottom: 0;
     }
 
-    .desc-portfolio-wrapper p {
+    .desc-portfolio-wrapper {
         margin-bottom: 20px;
     }
 
