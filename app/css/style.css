@@ -346,7 +346,11 @@ h2 span {
     align-self: flex-end;
 }
 
-.project-details .fa-external-link-alt {
+.project-icons i.fa-external-link-alt {
+    font-size: 1.6rem;
+}
+
+.project-icons i.fa-github-square {
     font-size: 1.6rem;
 }
 
@@ -400,7 +404,7 @@ h3.project-title {
 }
 
 .project-type, .project-icons i:hover, .icon:hover {
-    color: #61FED2;
+    color: var(--highlighted-links);
     transition: 0.3s;
     transition-timing-function: ease-out
 }
@@ -537,6 +541,7 @@ form input, form textarea {
 
     h1 .intro-title-small {
         font-size: 1.1rem;
+        margin-bottom: 0;
     }
 
     h1 .intro-title-name, h1 .intro-title-big {
@@ -558,7 +563,7 @@ form input, form textarea {
     }
 
     .project-skills {
-        width: 100%;
+        width: 80%;
     }
 
     .desc-intro {
@@ -721,12 +726,35 @@ form input, form textarea {
         display: flex;
         justify-content: center;
         position: relative;
-        height: 500px;
+        height: fit-content;
         margin: 12px 0;
     }
 
+    .project-link {
+        display: none;
+    }
+
     .project-details {
-        padding: 15px;
+        display: block;
+        position: static;
+        padding: 30px 15px 15px 15px;
+        height: auto;
+    }
+
+    .project-skills {
+        width: 100%;
+    }
+
+    .project-icons a:first-child {
+        margin-right: 30px;
+    }
+
+    .project-icons i.fa-external-link-alt {
+        font-size: 2.4rem;
+    }
+
+    .project-icons i.fa-github-square {
+        font-size: 2.6rem;
     }
 
     .project-display-left, .project-display-right {
