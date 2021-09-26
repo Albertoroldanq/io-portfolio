@@ -18,8 +18,8 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
-        $("header").classList.remove("hidden");
+        document.querySelector("header").classList.remove("hidden");
     } else {
-        $("header").classList.add("hidden");
+        document.querySelector("header").classList.add("hidden");
     }
 }
