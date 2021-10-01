@@ -276,15 +276,9 @@ h2 span {
 
 .desc-about-me-wrapper p, .desc-portfolio-wrapper p, .contact p {
     font-size: 1.2rem;
-    line-height: 2rem;
-    font-weight: 400;
-    color: var(--text);
-}
-
-.desc-about-me-wrapper p {
-    font-size: 1.2rem;
-    line-height: 2.4rem;
+    line-height: 2.2rem;
     font-weight: 300;
+    color: var(--text);
 }
 
 .desc-about-me-wrapper p, .desc-portfolio-wrapper p {
@@ -408,8 +402,8 @@ h3.project-title {
     justify-content: flex-end;
 }
 
-.project-icons a {
-    margin-right: 15px;
+.project-icons a:nth-child(2) {
+    margin-left: 15px;
 }
 
 .project-icons i {
@@ -473,7 +467,7 @@ h3.project-title {
 }
 
 .other-projects .project-details {
-    padding: 15px 25px;
+    padding: 20px;
     background: var(--navy);
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
     position: relative;
@@ -809,12 +803,9 @@ form input, form textarea {
         width: 100%;
     }
 
-    .project-icons a:first-child {
-        margin-right: 30px;
-    }
-
     .project-icons a:nth-child(2) {
-        margin-right: 0px;
+        margin-left: 20px;
+
     }
 
     .project-icons i.fa-external-link-alt {
