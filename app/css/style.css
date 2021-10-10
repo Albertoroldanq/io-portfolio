@@ -15,14 +15,21 @@
 }
 
 /* GENERAL SETTINGS*/
-* {
+html {
     font-family: 'Merriweather', sans-serif;
+}
+
+* {
     box-sizing: border-box;
 }
 
 .highlight {
     color: var(--highlighted-links-secondary);
+}
+
+.project-description .highlight {
     font-family: "Roboto Mono", monospace;
+    font-weight: 500;
 }
 
 html {
