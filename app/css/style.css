@@ -88,9 +88,15 @@ a {
     color: var(--text);
 }
 
+.about-me-subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 35px 0 5px 0;
+}
+
 .about-me a {
     font-weight: 400;
-    color: #61FED2;
+    color: var(--highlighted-links);
     padding: 0 5px;
     border-radius: 3px;
     white-space: nowrap;
