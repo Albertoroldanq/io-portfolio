@@ -88,7 +88,7 @@ a {
     color: var(--text);
 }
 
-.about-me-subtitle {
+h3.about-me-subtitle {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 35px 0 5px 0;
