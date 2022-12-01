@@ -84,8 +84,20 @@ a {
     color: var(--text);
 }
 
-.about-me p {
+.sub-section .about-me-subtitle {
     color: var(--text);
+}
+
+.about-me p, .sub-section p {
+    color: var(--text);
+}
+
+.about-me p {
+    margin-bottom: 20px;
+}
+
+.sub-section p {
+    margin-bottom:40px;
 }
 
 h3.about-me-subtitle {
@@ -94,7 +106,7 @@ h3.about-me-subtitle {
     margin: 35px 0 5px 0;
 }
 
-.about-me a {
+.about-me a, .sub-section a {
     font-weight: 400;
     color: var(--highlighted-links);
     padding: 0 5px;
@@ -102,17 +114,11 @@ h3.about-me-subtitle {
     white-space: nowrap;
 }
 
-.about-me a:hover {
+.about-me a:hover, .sub-section a:hover {
     color: var(--highlighted-links-secondary);
 }
 
-.about-me p {
-    margin-bottom: 20px;
-}
 
-.desc-about-me-wrapper {
-    padding-bottom: 100px;
-}
 
 nav, .intro-content, .projects-wrapper {
     display: flex;
